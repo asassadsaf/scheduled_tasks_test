@@ -12,7 +12,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class ThreadPoolConfiguration {
 
     @Bean
-    public Executor myAsync() {
+    public ThreadPoolTaskExecutor myAsync() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
         //最大线程数
         executor.setMaxPoolSize(100);
